@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage
 
-![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
+![desktop-design](https://github.com/ChurrinChurron/news-homepage/assets/81131232/5eac8ebe-c359-4c20-b3b8-901f947b2bca)
 
 ## Welcome! 👋
 
