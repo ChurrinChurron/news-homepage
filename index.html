@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="p-xxl-5 m-xxl-5">
+  <div class="fondo__menu"></div>
+<header>
+  <nav class="position-relative d-flex justify-content-between align-items-center p-4">
+    <a href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+    <button class="d-lg-none bg-transparent border-0" id="btnMenu"><img src="assets/images/icon-menu.svg" alt="icon-menu"></button>
+    <div class="d-none d-lg-flex">
+        <a href="#" class="text-decoration-none text-secondary me-5 h5">Home</a>
+        <a href="#" class="text-decoration-none text-secondary me-5 h5">New</a>
+        <a href="#" class="text-decoration-none text-secondary me-5 h5">Popular</a>
+        <a href="#" class="text-decoration-none text-secondary me-5 h5">Trending</a>
+        <a href="#" class="text-decoration-none text-secondary h5">Categories</a>
+    </div>
+    <div class="nav__mob d-lg-none">
+      <button><img src="assets/images/icon-menu-close.svg" id="btnMenuClose" alt="icon-menu-close"></button>
+      <a href="#" class="text-decoration-none text-dark mb-3">Home</a>
+      <a href="#" class="text-decoration-none text-dark mb-3">New</a>
+      <a href="#" class="text-decoration-none text-dark mb-3">Popular</a>
+      <a href="#" class="text-decoration-none text-dark mb-3">Trending</a>
+      <a href="#" class="text-decoration-none text-dark mb-3">Categories</a>
+   </div>
+  </nav>
+</header>
+
+<main class="p-3">
+  <div class="row">
+    <section class="col-12 col-lg-8">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/images/image-web-3-desktop.jpg">
+        <img src="assets/images/image-web-3-mobile.jpg" class="w-100" alt="image-web-3">
+      </picture>
+      <article class="d-lg-flex gap-xl-5">
+        <h1 class="display-3 mt-3 mb-0">The Bright Future of Web 3.0?</h1>
+        <div>
+          <p class="text-secondary mt-3 mb-3 mt-lg-4">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+          <button class="border-0 text-light text-uppercase px-4 py-3 mt-lg-4">Read more</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="col-12 col-lg-4 mt-5 p-3 news mt-lg-0 p-lg-4">
+      <h2 class="fw-bolder h1 mb-4">New</h2>
+      <article class="border-bottom border-secondary">
+        <h3 class="text-light fw-bold h5">Hydrogen VS Electric Cars</h3>
+        <h4 class="fs-6 fw-lighter py-2 mb-lg-4">Will hydrogen-fueled cars ever catch up to EVs?</h4>
+      </article>
+      <article class="border-bottom border-secondary mt-4">
+        <h3 class="text-light fw-bold h5">The Downsides of AI Artistry</h3>
+        <h4 class="fs-6 fw-lighter py-2 mb-lg-4">What are the possible adverse effects of on-demand AI image generation?</h4>
+      </article>
+      <article class="mt-4">
+        <h3 class="text-light fw-bold h5">Is VC Funding Drying Up?</h3>
+        <h4 class="fs-6 fw-lighter py-2">Private funding by VC firms is down 50% YOY. We take a look at what that means.</h4>
+      </article>
+    </section>
+  </div>
+
+  <section class="mt-5 pt-5 d-flex justify-content-center flex-column flex-lg-row">
+    <article class="d-flex align-items-center mb-5 me-3 w-100">
+      <img src="assets/images/image-retro-pcs.jpg" alt="retro-pc">
+      <div class="ms-4">
+        <h2 class="numbers fw-bold display-3">01</h2>
+        <h3 class="numbers__title h5 fw-bolder">Reviving Retro PCs</h3>
+        <h4 class="h6 text-secondary w-50">What happens when old PCs are given modern upgrades?</h4>
+      </div>
+    </article>
+    <article class="d-flex align-items-center mb-5 me-3 w-100">
+      <img src="assets/images/image-top-laptops.jpg" alt="laptop">
+      <div class="ms-4">
+        <h2 class="numbers fw-bold display-3">02</h2>
+        <h3 class="numbers__title h5 fw-bolder">Top 10 Laptops of 2022</h3>
+        <h4 class="h6 text-secondary w-75">Our best picks for various needs and budgets.</h4>
+      </div>
+    </article>
+    <article class="d-flex align-items-center mb-5 w-100">
+      <img src="assets/images/image-gaming-growth.jpg" alt="game">
+      <div class="ms-4">
+        <h2 class="numbers fw-bold display-3">03</h2>
+        <h3 class="numbers__title h5 fw-bolder">The Growth of Gaming</h3>
+        <h4 class="h6 text-secondary w-75">How the pandemic has sparked fresh opportunities.</h4>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+  <script src="src/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
